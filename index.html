@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Care for the Environment</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #e8f5e9;
+      margin: 0;
+      padding: 0;
+      color: #2e7d32;
+    }
+
+    nav {
+      background-color: #2e7d32;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #c8e6c9;
+    }
+
+    header {
+      background-color: #66bb6a;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+
+    .info {
+      background-color: #a5d6a7;
+      padding: 18px;
+      margin: 25px;
+      border-radius: 10px;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    h2 {
+      color: #1b5e20;
+      padding-left: 20px;
+      margin-top: 40px;
+    }
+
+    .tip {
+      display: flex;
+      align-items: center;
+      background-color: #f1f8e9;
+      margin: 15px 20px;
+      padding: 12px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    .tip:nth-child(even) {
+      animation-delay: 0.2s;
+    }
+    .tip:nth-child(odd) {
+      animation-delay: 0.4s;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .tip img {
+      width: 100px;
+      height: 100px;
+      border-radius: 8px;
+      margin-right: 18px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .tip:hover img {
+      transform: scale(1.05);
+    }
+
+    .tip p {
+      margin: 0;
+      font-size: 1.02rem;
+    }
+
+    .section {
+      padding: 0 20px;
+      margin-bottom: 30px;
+      font-size: 1.05rem;
+    }
+
+    .quote {
+      background-color: #c8e6c9;
+      margin: 20px;
+      padding: 15px 25px;
+      border-left: 5px solid #388e3c;
+      font-style: italic;
+      font-size: 1.1rem;
+    }
+
+    .button-container {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .env-btn {
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .env-btn:hover {
+      background-color: #1b5e20;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      background-color: #388e3c;
+      color: white;
+      padding: 12px;
+      margin-top: 40px;
+      font-size: 0.95rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      .tip {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .tip img {
+        margin-bottom: 10px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#tips">Tips</a></li>
+      <li><a href="#facts">Fun Facts</a></li>
+      <li><a href="#quote">Quote</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header id="home">
+    <h1>How to Care for Your Environment</h1>
+  </header>
+
+  <!-- Student Info -->
+  <div class="info">
+    <p><strong>Name:</strong> Hemanth Kalaiyappan</p>
+    <p><strong>Department:</strong> ECE</p>
+    <p><strong>Register Number:</strong> 2127220701053</p>
+  </div>
+
+  <!-- Tips Section -->
+  <main id="tips">
+    <h2>🌿 Simple Ways to Care for the Environment</h2>
+
+    <!-- Environmental Tips -->
+    <div class="tip">
+      <img src="https://cdn.pixabay.com/photo/2020/12/04/16/08/tree-5803607_1280.jpg" alt="Planting Tree">
+      <p>🌱 Plant trees and grow plants to improve air quality and reduce carbon footprint.</p>
+    </div>
+
+    <div class="tip">
+      <img src="https://cdn.pixabay.com/photo/2016/03/14/09/41/garbage-1255244_1280.jpg" alt="Recycling">
+      <p>♻️ Recycle and reuse materials like plastic, glass, and paper.</p>
+    </div>
+
+    <div class="tip">
+      <img src="https://cdn.pixabay.com/photo/2020/11/08/10/38/dog-5723355_1280.jpg" alt="Cycling">
+      <p>🚴 Use bicycles or walk for short distances to reduce pollution.</p>
+    </div>
+
+    <div class="tip">
+      <img src="https://cdn.pixabay.com/photo/2022/10/27/17/10/energy-7551283_1280.jpg" alt="Saving Electricity">
+      <p>💡 Save electricity by turning off lights and devices when not in use.</p>
+    </div>
+
+    <div class="tip">
+      <img src="https://cdn.pixabay.com/photo/2015/07/11/14/53/plumbing-840835_1280.jpg" alt="Saving Water">
+      <p>💧 Conserve water by fixing leaks and using water wisely.</p>
+    </div>
+
+    <div class="tip">
+      <img src="https://cdn.pixabay.com/photo/2019/08/21/09/31/monk-4420676_1280.jpg" alt="Clean Surroundings">
+      <p>🧹 Keep surroundings clean and avoid littering in public places.</p>
+    </div>
+
+    <div class="tip">
+      <img src="https://cdn.pixabay.com/photo/2016/11/19/11/11/hands-1838658_1280.jpg" alt="Spread Awareness">
+      <p>📚 Spread awareness and encourage others to take care of the environment.</p>
+    </div>
+
+    <div class="tip">
+      <img src="https://cdn.pixabay.com/photo/2024/02/06/16/59/paper-bag-8557551_1280.jpg" alt="Reusable Bags">
+      <p>🛍️ Carry reusable bags when shopping instead of using single-use plastic bags.</p>
+    </div>
+
+    <div class="tip">
+      <img src="https://cdn.pixabay.com/photo/2017/03/13/07/34/photovoltaic-2138992_1280.jpg" alt="Solar Power">
+      <p>🔋 Use renewable energy sources like solar power if possible.</p>
+    </div>
+
+    <div class="tip">
+      <img src="https://cdn.pixabay.com/photo/2014/08/16/11/17/compost-419261_1280.jpg" alt="Compost">
+      <p>🍂 Compost organic kitchen waste to reduce landfill load and create natural fertilizer.</p>
+    </div>
+  </main>
+
+  <!-- Button Area -->
+  <div class="button-container">
+    <button class="env-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">🔝 Back to Top</button>
+  </div>
+
+  <!-- Fun Facts -->
+  <div class="section" id="facts">
+    <h2>🌍 Fun Environmental Facts</h2>
+    <ul>
+      <li>🌳 One tree can absorb 22 kg of carbon dioxide per year.</li>
+      <li>🧴 Plastic can take up to 1,000 years to decompose in landfills.</li>
+      <li>🌎 Earth Day is celebrated on April 22 every year.</li>
+      <li>🚰 Turning off your tap while brushing can save up to 8 gallons of water per day!</li>
+    </ul>
+  </div>
+
+  <!-- Quote -->
+  <div class="quote" id="quote">
+    "The Earth is what we all have in common." — Wendell Berry
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Hemanth Kalaiyappan — Environment Awareness Project</p>
+  </footer>
+
+</body>
+</html>
